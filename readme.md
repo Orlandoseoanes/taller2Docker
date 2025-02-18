@@ -10,7 +10,6 @@ Este proyecto es un ejemplo práctico de cómo crear y desplegar una aplicación
 
 ## Estructura del Proyecto
 
-
 - **Dockerfile:** Instrucciones para construir la imagen Docker.
 - **requirements.txt:** Lista de dependencias, que debe incluir FastAPI y Uvicorn.
 - **app/main.py:** Código fuente de la aplicación FastAPI.
@@ -21,3 +20,6 @@ Para construir la imagen, navega al directorio del proyecto y ejecuta:
 
 ```sh
 docker build -t oaseoanes/fastapi-app:latest .
+
+
+docker run -d -p 8000:80 --name fastapi-container oaseoanes/fastapi-app
